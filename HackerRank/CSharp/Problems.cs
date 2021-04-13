@@ -11,6 +11,8 @@ using System.Text;
 
 namespace HackerRank
 {
+    //DEPRECATED: New model created for problem solving
+    //TODO: Separate Problem Resoltutions in each class inside Problems Folder like BillDivision
     public class Problems
     {
         public static List<int> compareTriplets(List<int> a, List<int> b)

@@ -1,5 +1,4 @@
 using System;
-using HackerRank;
 using Xunit;
 
 namespace HackerRank.CSharp.Problems

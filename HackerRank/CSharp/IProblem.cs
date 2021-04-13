@@ -1,4 +1,4 @@
-namespace HackerRank
+namespace HackerRank.CSharp.Problems
 {
     public interface IProblem
     {

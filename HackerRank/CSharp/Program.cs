@@ -26,7 +26,9 @@ namespace HackerRank
             var problems = new Dictionary<string, IProblem>();
 
             problems.Add("SolveMeFirst", new SolveMeFirst());
+            problems.Add("CompareTriplets", new CompareTriplets());
             problems.Add("BillDivision", new BillDivision());
+            
 
             return problems;
         }

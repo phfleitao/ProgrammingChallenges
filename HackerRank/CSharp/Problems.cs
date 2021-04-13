@@ -1,31 +1,14 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Data;
-using System.Diagnostics.Tracing;
 using System.Globalization;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Security.Cryptography;
-using System.Text;
-
 namespace HackerRank
 {
     //DEPRECATED: New model created for problem solving
     //TODO: Separate Problem Resoltutions in each class inside Problems Folder like BillDivision
     public class Problems
     {
-        public static List<int> compareTriplets(List<int> a, List<int> b)
-        {
-            var resultado = new List<int> { 0, 0 };
-            for (int i = 0; i < a.Count; i++)
-            {
-                if (a[i] > b[i]) resultado[0]++;
-                if (b[i] > a[i]) resultado[1]++;
-            }
-            return resultado;
-        }
-
         public static long aVeryBigSum(long[] ar)
         {
             long soma = 0;

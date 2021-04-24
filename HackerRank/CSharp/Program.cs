@@ -28,7 +28,8 @@ namespace HackerRank
             problems.Add("SolveMeFirst", new SolveMeFirst());
             problems.Add("CompareTriplets", new CompareTriplets());
             problems.Add("BillDivision", new BillDivision());
-            problems.Add("CatsAndMouse", new CatsAndMouse());           
+            problems.Add("CatsAndMouse", new CatsAndMouse()); 
+            problems.Add("CountingValleys", new CountingValleys());                       
 
             return problems;
         }

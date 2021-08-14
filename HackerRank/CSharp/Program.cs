@@ -10,7 +10,7 @@ namespace HackerRank
         {
             var problems = GetProblems();
 
-            string problemName = "SolveMeFirst"; //Definir nome do problema para executar apenas 1
+            string problemName = "SalesByMatch"; //Definir nome do problema para executar apenas 1
             if(!string.IsNullOrEmpty(problemName)){
                 problems[problemName].Run();
                 return;
@@ -30,6 +30,7 @@ namespace HackerRank
             problems.Add("BillDivision", new BillDivision());
             problems.Add("CatsAndMouse", new CatsAndMouse()); 
             problems.Add("CountingValleys", new CountingValleys());                       
+            problems.Add("SalesByMatch", new SalesByMatch());  
 
             return problems;
         }

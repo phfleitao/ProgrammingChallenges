@@ -12,18 +12,13 @@ namespace HackerRank.CSharp.Problems
 
         public void Run()
         {
-            TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
-
             int steps = Convert.ToInt32(Console.ReadLine().Trim());
 
             string path = Console.ReadLine();
 
             int result = countingValleys(steps, path);
 
-            textWriter.WriteLine(result);
-
-            textWriter.Flush();
-            textWriter.Close();
+            Console.WriteLine(result);
         }
         public int countingValleys(int steps, string path)
         {

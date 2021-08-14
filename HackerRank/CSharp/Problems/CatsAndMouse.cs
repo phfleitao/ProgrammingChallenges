@@ -12,7 +12,6 @@ namespace HackerRank.CSharp.Problems
 
         public void Run()
         {
-            TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
             int q = Convert.ToInt32(Console.ReadLine());
 
             for (int qItr = 0; qItr < q; qItr++) {
@@ -24,11 +23,8 @@ namespace HackerRank.CSharp.Problems
 
                 string result = catAndMouse(x, y, z);
 
-                textWriter.WriteLine(result);
+                Console.WriteLine(result);
             }
-
-            textWriter.Flush();
-            textWriter.Close();
         }
 
         public string catAndMouse(int x, int y, int z) 

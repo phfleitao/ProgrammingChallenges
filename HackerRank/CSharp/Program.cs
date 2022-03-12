@@ -10,7 +10,7 @@ namespace HackerRank
         {
             var problems = GetProblems();
 
-            string problemName = "BetweenTwoSets"; //Definir nome do problema para executar apenas 1
+            string problemName = "EletronicShop"; //Definir nome do problema para executar apenas 1
             if(!string.IsNullOrEmpty(problemName)){
                 problems[problemName].Run();
                 return;
@@ -32,6 +32,7 @@ namespace HackerRank
             problems.Add("CountingValleys", new CountingValleys());                       
             problems.Add("SalesByMatch", new SalesByMatch());  
             problems.Add("BetweenTwoSets", new BetweenTwoSets());  
+            problems.Add("EletronicShop", new EletronicShop());  
 
             return problems;
         }

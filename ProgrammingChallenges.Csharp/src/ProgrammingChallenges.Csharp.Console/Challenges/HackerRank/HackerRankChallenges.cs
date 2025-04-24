@@ -35,6 +35,9 @@ internal static class HackerRankChallenges
     public static (string Identification, string Description) DiagonalDifference
         => ($"{Identification}.DiagonalDifference", "Diagonal Difference");
 
+    public static (string Identification, string Description) DivisibleSumPairs
+    => ($"{Identification}.DivisibleSumPairs", "Divisible Sum Pairs");
+
     public static (string Identification, string Description) EletronicShop
         => ($"{Identification}.EletronicShop", "Eletronic Shop");
 

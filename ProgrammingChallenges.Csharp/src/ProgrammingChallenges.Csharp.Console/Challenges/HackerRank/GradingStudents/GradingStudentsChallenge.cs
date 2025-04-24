@@ -1,4 +1,3 @@
-using System.IO;
 using ProgrammingChallenges.Csharp.Console.Core;
 
 namespace ProgrammingChallenges.Csharp.Console.Challenges.HackerRank;
@@ -13,7 +12,7 @@ internal sealed class GradingStudentsChallenge(IChallengeIO challengeIO) : Chall
     {
         int gradesCount = Convert.ToInt32(Console.ReadLine()!.Trim());
 
-        List<int> grades = new List<int>();
+        List<int> grades = [];
 
         for (int i = 0; i < gradesCount; i++)
         {

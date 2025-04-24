@@ -1,4 +1,3 @@
-using System.IO;
 using ProgrammingChallenges.Csharp.Console.Core;
 
 namespace ProgrammingChallenges.Csharp.Console.Challenges.HackerRank;

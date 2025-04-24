@@ -11,23 +11,6 @@ namespace ProgrammingChallenges.Csharp.Console.Challenges.HackerRank;
 [SuppressMessage("Maintainability", "IDE0057", Justification = "Keep challenge code as is even if not used")]
 internal static class OldChallengesToMigrate
 {
-    public static int divisibleSumPairs(int n, int k, int[] ar)
-    {
-        var counter = 0;
-        for (int i = 0; i < ar.Length-1; i++)
-        {
-            for (int j = i+1; j < ar.Length; j++)
-            {
-                if ((ar[i] + ar[j]) % k == 0)
-                {
-                    counter++;
-                }
-            }                
-        }
-
-        return counter;
-    }
-
     public static string angryProfessor(int k, int[] a)
     {
         return a.Count(t => t <= 0) >= k ? "NO" : "YES";

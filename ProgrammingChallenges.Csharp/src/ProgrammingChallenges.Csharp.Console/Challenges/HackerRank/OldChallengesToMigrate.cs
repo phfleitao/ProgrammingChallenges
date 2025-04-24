@@ -11,30 +11,6 @@ namespace ProgrammingChallenges.Csharp.Console.Challenges.HackerRank;
 [SuppressMessage("Maintainability", "IDE0057", Justification = "Keep challenge code as is even if not used")]
 internal static class OldChallengesToMigrate
 {
-    public static string kangaroo(int x1, int v1, int x2, int v2)
-    {
-        if (x2 > x1 && v2 >= v1)
-        {
-            return "NO";
-        }
-
-        if (x1 > x2 && v1 >= v2)
-        {
-            return "NO";
-        }
-
-        var p = (x2 - x1) / (v1 - v2);
-
-        if (x1 + (v1 * p) == x2 + (v2 * p))
-        {
-            return "YES";
-        }
-        else
-        {
-            return "NO";
-        }
-    }
-
     public static int migratoryBirds(List<int> arr)
     {
         var frequency = new int[5] { 0, 0, 0, 0, 0 };

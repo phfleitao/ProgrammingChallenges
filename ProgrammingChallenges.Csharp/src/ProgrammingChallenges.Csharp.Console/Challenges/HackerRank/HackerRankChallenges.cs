@@ -43,7 +43,10 @@ internal static class HackerRankChallenges
 
     public static (string Identification, string Description) MiniMaxSum
         => ($"{Identification}.MiniMaxSum", "Mini-Max Sum");
-    
+
+    public static (string Identification, string Description) NumberLineJumps
+    => ($"{Identification}.NumberLineJumps", "Number Line Jumps");
+
     public static (string Identification, string Description) PlusMinus
         => ($"{Identification}.PlusMinus", "Plus Minus");
 

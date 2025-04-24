@@ -24,6 +24,7 @@ internal static class ConsoleDependencyInjection
         services.AddTransient<EletronicShopChallenge>();
         services.AddTransient<GradingStudentsChallenge>();
         services.AddTransient<MiniMaxSumChallenge>();
+        services.AddTransient<NumberLineJumpsChallenge>();
         services.AddTransient<PlusMinusChallenge>();
         services.AddTransient<SalesByMatchChallenge>();
         services.AddTransient<SimpleArraySumChallenge>();

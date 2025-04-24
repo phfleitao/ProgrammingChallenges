@@ -12,17 +12,6 @@ namespace ProgrammingChallenges.Csharp.Console.Challenges.HackerRank;
 [SuppressMessage("Maintainability", "IDE0057", Justification = "Keep challenge code as is even if not used")]
 internal static class OldChallengesToMigrate
 {
-    public static int simpleArraySum(int[] ar)
-    {
-        int soma = 0;
-        foreach (var valor in ar)
-        {
-            soma += valor;
-        }
-
-        return soma;
-    }
-
     public static int diagonalDifference(List<List<int>> arr)
     {
         int somaDiagonalPrincipal = 0;

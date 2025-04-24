@@ -12,31 +12,6 @@ namespace ProgrammingChallenges.Csharp.Console.Challenges.HackerRank;
 [SuppressMessage("Maintainability", "IDE0057", Justification = "Keep challenge code as is even if not used")]
 internal static class OldChallengesToMigrate
 {
-    public static void plusMinus(int[] arr)
-    {
-        int countPlus = 0; int countMinus = 0; int countZero = 0;
-
-        foreach (var value in arr)
-        {
-            if (value > 0)
-            {
-                countPlus++;
-            }
-            else if (value < 0)
-            {
-                countMinus++;
-            }
-            else
-            {
-                countZero++;
-            }
-        }
-
-        System.Console.WriteLine((countPlus / (double)arr.Length).ToString("0.000000", CultureInfo.InvariantCulture));
-        System.Console.WriteLine((countMinus / (double)arr.Length).ToString("0.000000", CultureInfo.InvariantCulture));
-        System.Console.WriteLine((countZero / (double)arr.Length).ToString("0.000000", CultureInfo.InvariantCulture));
-    }
-
     public static void staircase(int n)
     {
         int printIndex = n - 1;

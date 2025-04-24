@@ -27,6 +27,7 @@ internal static class ConsoleDependencyInjection
         services.AddTransient<SimpleArraySumChallenge>();
         services.AddTransient<SolveMeFirstChallenge>();
         services.AddTransient<StaircaseChallenge>();
+        services.AddTransient<TimeConversionChallenge>();
 
         return services;
     }

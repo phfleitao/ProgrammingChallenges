@@ -52,4 +52,7 @@ internal static class HackerRankChallenges
 
     public static (string Identification, string Description) Staircase
         => ($"{Identification}.Staircase", "Staircase");
+
+    public static (string Identification, string Description) TimeConversion
+        => ($"{Identification}.TimeConversion", "Time Conversion");   
 }

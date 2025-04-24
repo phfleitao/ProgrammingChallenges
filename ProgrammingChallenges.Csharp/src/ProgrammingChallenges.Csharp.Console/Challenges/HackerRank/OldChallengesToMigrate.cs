@@ -11,11 +11,6 @@ namespace ProgrammingChallenges.Csharp.Console.Challenges.HackerRank;
 [SuppressMessage("Maintainability", "IDE0057", Justification = "Keep challenge code as is even if not used")]
 internal static class OldChallengesToMigrate
 {
-    public static string timeConversion(string s)
-    {
-        return DateTime.Parse(s).ToString("HH:mm:ss");
-    }
-
     //Falha no submit para numeros muito altos ... é preciso otimizar
     public static int OnesAndTwos(int a, int b)
     {

@@ -18,4 +18,11 @@ internal sealed class TestChallengeIO : IChallengeIO
             _inputs.Enqueue(input);
         }
     }
+
+    public void Dispose()
+    {
+        _inputs.Clear();
+        _output.Clear();
+        GC.SuppressFinalize(this);
+    }
 }

@@ -56,6 +56,9 @@ internal static class HackerRankChallenges
     public static (string Identification, string Description) NumberLineJumps
         => ($"{Identification}.NumberLineJumps", "Number Line Jumps");
 
+    public static (string Identification, string Description) OnesAndTwos
+        => ($"{Identification}.OnesAndTwos", "Ones and Twos");
+
     public static (string Identification, string Description) PlusMinus
         => ($"{Identification}.PlusMinus", "Plus Minus");
 

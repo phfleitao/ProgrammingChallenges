@@ -13,7 +13,7 @@ public class TimeConversionChallengeTests
     public void BasicTests_MustPassAll(string input, string expectedOutput)
     {
         //Arrange
-        var challengeIO = new TestChallengeIO();
+        using var challengeIO = new TestChallengeIO();
         challengeIO.AddInputs(input);
         var problem = new TimeConversionChallenge(challengeIO);
 

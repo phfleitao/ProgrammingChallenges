@@ -11,7 +11,7 @@ public class SimpleArraySumChallengeTests
     public void BasicTests_MustPassAll(string input1, string input2, string expectedOutput)
     {
         //Arrange
-        var challengeIO = new TestChallengeIO();
+        using var challengeIO = new TestChallengeIO();
         challengeIO.AddInputs(input1, input2);
         var problem = new SimpleArraySumChallenge(challengeIO);
 

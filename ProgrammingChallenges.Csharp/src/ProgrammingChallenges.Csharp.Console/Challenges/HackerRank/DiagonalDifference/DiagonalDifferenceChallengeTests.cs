@@ -11,7 +11,7 @@ public class DiagonalDifferenceChallengeTests
     public void BasicTests_MustPassAll(string input1, string input2, string input3, string input4, string expectedOutput)
     {
         //Arrange
-        var challengeIO = new TestChallengeIO();
+        using var challengeIO = new TestChallengeIO();
         challengeIO.AddInputs(input1, input2, input3, input4);
         var problem = new DiagonalDifferenceChallenge(challengeIO);
 

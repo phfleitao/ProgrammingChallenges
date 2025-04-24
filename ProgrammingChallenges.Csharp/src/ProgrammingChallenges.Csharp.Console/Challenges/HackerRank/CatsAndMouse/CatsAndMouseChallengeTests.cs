@@ -13,7 +13,7 @@ public class CatsAndMouseChallengeTests
     public void BasicTests_MustPassAll(string input1, string input2, string expectedOutput)
     {
         //Arrange
-        var challengeIO = new TestChallengeIO();
+        using var challengeIO = new TestChallengeIO();
         challengeIO.AddInputs(input1, input2);
         var problem = new CatsAndMouseChallenge(challengeIO);
 
@@ -30,7 +30,7 @@ public class CatsAndMouseChallengeTests
     public void TwoLineTests_MustPassAll(string input1, string input2, string input3, string expectedOutput)
     {
         //Arrange
-        var challengeIO = new TestChallengeIO();
+        using var challengeIO = new TestChallengeIO();
         challengeIO.AddInputs(input1, input2, input3);
         var problem = new CatsAndMouseChallenge(challengeIO);
 

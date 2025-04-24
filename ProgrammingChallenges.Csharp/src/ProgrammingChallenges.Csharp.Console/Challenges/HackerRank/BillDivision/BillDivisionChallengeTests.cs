@@ -11,7 +11,7 @@ public class BillDivisionChallengeTests
     [InlineData("4 1", "3 10 2 9", "12", "5")]
     public void BasicTests_MustPassAll(string input1, string input2, string input3, string expectedOutput){
         //Arrange
-        var challengeIO = new TestChallengeIO();
+        using var challengeIO = new TestChallengeIO();
         challengeIO.AddInputs(input1, input2, input3);
         var problem = new BillDivisionChallenge(challengeIO);
 

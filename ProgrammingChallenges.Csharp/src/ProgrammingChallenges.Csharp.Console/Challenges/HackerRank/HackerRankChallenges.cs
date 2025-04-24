@@ -5,11 +5,14 @@ internal static class HackerRankChallenges
     public const string Identification = "HackerRank";
 
     public static (string Identification, string Description) Template
-    => ($"{Identification}.Template", "Template");
+        => ($"{Identification}.Template", "Template");
 
+
+    public static (string Identification, string Description) AngryProfessor
+        => ($"{Identification}.AngryProfessor", "Angry Professor");
 
     public static (string Identification, string Description) AppleAndOrange
-    => ($"{Identification}.AppleAndOrange", "Apple and Orange");
+        => ($"{Identification}.AppleAndOrange", "Apple and Orange");
 
     public static (string Identification, string Description) AVeryBigSum
         => ($"{Identification}.AVeryBigSum", "A Very Big Sum");
@@ -22,7 +25,7 @@ internal static class HackerRankChallenges
 
     public static (string Identification, string Description) BirthdayCakeCandles
         => ($"{Identification}.BirthdayCakeCandles", "Birthday Cake Candles");
-    
+
     public static (string Identification, string Description) CatsAndMouse
         => ($"{Identification}.CatsAndMouse", "Cats and Mouse");
 
@@ -36,22 +39,22 @@ internal static class HackerRankChallenges
         => ($"{Identification}.DiagonalDifference", "Diagonal Difference");
 
     public static (string Identification, string Description) DivisibleSumPairs
-    => ($"{Identification}.DivisibleSumPairs", "Divisible Sum Pairs");
+        => ($"{Identification}.DivisibleSumPairs", "Divisible Sum Pairs");
 
     public static (string Identification, string Description) EletronicShop
         => ($"{Identification}.EletronicShop", "Eletronic Shop");
 
     public static (string Identification, string Description) GradingStudents
-    => ($"{Identification}.GradingStudents", "Grading Students");
+        => ($"{Identification}.GradingStudents", "Grading Students");
 
     public static (string Identification, string Description) MigratoryBirds
-    => ($"{Identification}.MigratoryBirds", "Migratory Birds");
+        => ($"{Identification}.MigratoryBirds", "Migratory Birds");
 
     public static (string Identification, string Description) MiniMaxSum
         => ($"{Identification}.MiniMaxSum", "Mini-Max Sum");
 
     public static (string Identification, string Description) NumberLineJumps
-    => ($"{Identification}.NumberLineJumps", "Number Line Jumps");
+        => ($"{Identification}.NumberLineJumps", "Number Line Jumps");
 
     public static (string Identification, string Description) PlusMinus
         => ($"{Identification}.PlusMinus", "Plus Minus");
@@ -61,7 +64,7 @@ internal static class HackerRankChallenges
 
     public static (string Identification, string Description) SimpleArraySum
         => ($"{Identification}.SimpleArraySum", "Simple Array Sum");
-    
+
     public static (string Identification, string Description) SolveMeFirst
         => ($"{Identification}.SolveMeFirst", "Solve me First");
 
@@ -69,5 +72,5 @@ internal static class HackerRankChallenges
         => ($"{Identification}.Staircase", "Staircase");
 
     public static (string Identification, string Description) TimeConversion
-        => ($"{Identification}.TimeConversion", "Time Conversion");   
+        => ($"{Identification}.TimeConversion", "Time Conversion");
 }

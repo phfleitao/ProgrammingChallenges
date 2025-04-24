@@ -11,11 +11,6 @@ namespace ProgrammingChallenges.Csharp.Console.Challenges.HackerRank;
 [SuppressMessage("Maintainability", "IDE0057", Justification = "Keep challenge code as is even if not used")]
 internal static class OldChallengesToMigrate
 {
-    public static string angryProfessor(int k, int[] a)
-    {
-        return a.Count(t => t <= 0) >= k ? "NO" : "YES";
-    }
-
     //Falha no submit para numeros muito altos ... é preciso otimizar
     public static int OnesAndTwos(int a, int b)
     {

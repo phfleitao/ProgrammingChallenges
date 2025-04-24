@@ -11,29 +11,6 @@ namespace ProgrammingChallenges.Csharp.Console.Challenges.HackerRank;
 [SuppressMessage("Maintainability", "IDE0057", Justification = "Keep challenge code as is even if not used")]
 internal static class OldChallengesToMigrate
 {
-    public static int migratoryBirds(List<int> arr)
-    {
-        var frequency = new int[5] { 0, 0, 0, 0, 0 };
-        var GreaterFrequency = 0;
-
-        for (int i = 0; i < arr.Count; i++)
-        {
-            frequency[arr[i] - 1]++;
-            if (frequency[arr[i] - 1] > GreaterFrequency)
-            {
-                GreaterFrequency = frequency[arr[i] - 1];
-            }
-        }
-        for (int i = 0; i < frequency.Length; i++)
-        {
-            if (frequency[i] == GreaterFrequency)
-            {
-                return i + 1;
-            }
-        }
-        return 0;
-    }
-
     public static int divisibleSumPairs(int n, int k, int[] ar)
     {
         var counter = 0;

@@ -41,6 +41,9 @@ internal static class HackerRankChallenges
     public static (string Identification, string Description) GradingStudents
     => ($"{Identification}.GradingStudents", "Grading Students");
 
+    public static (string Identification, string Description) MigratoryBirds
+    => ($"{Identification}.MigratoryBirds", "Migratory Birds");
+
     public static (string Identification, string Description) MiniMaxSum
         => ($"{Identification}.MiniMaxSum", "Mini-Max Sum");
 

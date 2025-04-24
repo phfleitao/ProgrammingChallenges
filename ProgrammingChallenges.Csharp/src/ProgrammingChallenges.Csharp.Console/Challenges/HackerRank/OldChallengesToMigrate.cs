@@ -1,6 +1,5 @@
 ﻿using System.Data;
 using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
 
 namespace ProgrammingChallenges.Csharp.Console.Challenges.HackerRank;
 
@@ -12,28 +11,6 @@ namespace ProgrammingChallenges.Csharp.Console.Challenges.HackerRank;
 [SuppressMessage("Maintainability", "IDE0057", Justification = "Keep challenge code as is even if not used")]
 internal static class OldChallengesToMigrate
 {
-    public static void miniMaxSum(int[] arr)
-    {
-        long max = 0;
-        long min = 0;
-
-        Array.Sort(arr);
-        for (int i = 0; i < arr.Length; i++)
-        {
-            if (i < arr.Length - 1)
-            {
-                min += arr[i];
-            }
-
-            if (i > 0)
-            {
-                max += arr[i];
-            }
-        }
-
-        System.Console.WriteLine($"{min} {max}");
-    }
-
     public static int birthdayCakeCandles(List<int> candles)
     {
         candles.Sort();

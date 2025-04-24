@@ -20,6 +20,7 @@ internal static class ConsoleDependencyInjection
         services.AddTransient<CountingValleysChallenge>();
         services.AddTransient<DiagonalDifferenceChallenge>();
         services.AddTransient<EletronicShopChallenge>();
+        services.AddTransient<MiniMaxSumChallenge>();
         services.AddTransient<PlusMinusChallenge>();
         services.AddTransient<SalesByMatchChallenge>();
         services.AddTransient<SimpleArraySumChallenge>();

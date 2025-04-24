@@ -12,27 +12,6 @@ namespace ProgrammingChallenges.Csharp.Console.Challenges.HackerRank;
 [SuppressMessage("Maintainability", "IDE0057", Justification = "Keep challenge code as is even if not used")]
 internal static class OldChallengesToMigrate
 {
-    public static void staircase(int n)
-    {
-        int printIndex = n - 1;
-        for (int i = 0; i < n; i++)
-        {
-            for (int j = 0; j < n; j++)
-            {
-                if (j >= printIndex)
-                {
-                    System.Console.Write("#");
-                }
-                else
-                {
-                    System.Console.Write(" ");
-                }
-            }
-            System.Console.WriteLine("");
-            printIndex--;
-        }
-    }
-
     public static void miniMaxSum(int[] arr)
     {
         long max = 0;

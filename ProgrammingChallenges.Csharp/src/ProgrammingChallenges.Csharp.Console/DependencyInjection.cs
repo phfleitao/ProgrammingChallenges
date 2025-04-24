@@ -23,7 +23,8 @@ internal static class ConsoleDependencyInjection
         services.AddTransient<PlusMinusChallenge>();
         services.AddTransient<SalesByMatchChallenge>();
         services.AddTransient<SimpleArraySumChallenge>();
-        services.AddTransient<SolveMeFirstChallenge>();        
+        services.AddTransient<SolveMeFirstChallenge>();
+        services.AddTransient<StaircaseChallenge>();
 
         return services;
     }

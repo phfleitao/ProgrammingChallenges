@@ -43,4 +43,7 @@ internal static class HackerRankChallenges
     
     public static (string Identification, string Description) SolveMeFirst
         => ($"{Identification}.SolveMeFirst", "Solve me First");
+
+    public static (string Identification, string Description) Staircase
+        => ($"{Identification}.Staircase", "Staircase");
 }

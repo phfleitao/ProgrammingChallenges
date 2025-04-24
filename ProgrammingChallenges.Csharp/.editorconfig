@@ -43,6 +43,7 @@ dotnet_style_require_accessibility_modifiers = for_non_interface_members:error
 dotnet_style_coalesce_expression = true:error
 dotnet_style_collection_initializer = true:error
 dotnet_style_explicit_tuple_names = true:error
+dotnet_style_namespace_match_folder = false:error
 dotnet_style_null_propagation = true:error
 dotnet_style_object_initializer = true:error
 dotnet_style_prefer_auto_properties = true:warning
@@ -206,6 +207,9 @@ dotnet_diagnostic.SA0001.severity = none
 # SA1101: Prefix local calls with this
 dotnet_diagnostic.SA1101.severity = none
 
+# S1135: Track uses of "TODO" tags
+dotnet_diagnostic.S1135.severity = suggestion
+
 # SA1309: Field names should not begin with underscore
 dotnet_diagnostic.SA1309.severity = none
 
@@ -283,3 +287,18 @@ dotnet_diagnostic.CA2327.severity = none
 
 # IDE0046: Convert to conditional expression
 dotnet_diagnostic.IDE0046.severity = none
+dotnet_diagnostic.IDE0022.severity = none
+
+# CA1305: Specify IFormatProvider
+dotnet_diagnostic.CA1305.severity = none
+# S6580: Use a format provider when parsing date and time
+dotnet_diagnostic.S6580.severity = none
+
+# CA1303: Do not pass literals as localized parameters
+dotnet_diagnostic.CA1303.severity = none
+
+# IDE0305: Simplify collection initialization
+dotnet_diagnostic.IDE0305.severity = none
+
+# CA1707: Identifiers should not contain underscores (Removed because of test names)
+dotnet_diagnostic.CA1707.severity = none

@@ -1,5 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
-using ProgrammingChallenges.Csharp.Console.Challenges.HackerRank.SolveMeFirst;
+using ProgrammingChallenges.Csharp.Console.Challenges.HackerRank;
 using ProgrammingChallenges.Csharp.Console.Core;
 
 namespace ProgrammingChallenges.Csharp.Console;
@@ -10,10 +10,17 @@ internal static class ConsoleDependencyInjection
     {
         // Core Services
         services.AddTransient<IChallengeIO, ConsoleChallengeIO>();
-        
+
         // HackerRank Challenges
-        services.AddTransient<SolveMeFirstChallenge>();
-        
+        services.AddTransient<BetweenTwoSetsChallenge>();
+        services.AddTransient<BillDivisionChallenge>();
+        services.AddTransient<CatsAndMouseChallenge>();
+        services.AddTransient<CompareTripletsChallenge>();
+        services.AddTransient<CountingValleysChallenge>();
+        services.AddTransient<EletronicShopChallenge>();
+        services.AddTransient<SalesByMatchChallenge>();
+        services.AddTransient<SolveMeFirstChallenge>();        
+
         return services;
     }
 }

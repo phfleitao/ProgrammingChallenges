@@ -7,6 +7,10 @@ internal static class HackerRankChallenges
     public static (string Identification, string Description) Template
     => ($"{Identification}.Template", "Template");
 
+
+    public static (string Identification, string Description) AVeryBigSum
+        => ($"{Identification}.AVeryBigSum", "A Very Big Sum");
+
     public static (string Identification, string Description) BetweenTwoSets
         => ($"{Identification}.BetweenTwoSets", "Between Two Sets");
 

@@ -17,6 +17,9 @@ internal static class HackerRankChallenges
     public static (string Identification, string Description) BillDivision
         => ($"{Identification}.BillDivision", "BillDivision");
 
+    public static (string Identification, string Description) BirthdayCakeCandles
+        => ($"{Identification}.BirthdayCakeCandles", "Birthday Cake Candles");
+    
     public static (string Identification, string Description) CatsAndMouse
         => ($"{Identification}.CatsAndMouse", "Cats and Mouse");
 

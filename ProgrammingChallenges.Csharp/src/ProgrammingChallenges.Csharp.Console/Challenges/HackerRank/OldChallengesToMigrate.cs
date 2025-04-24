@@ -11,23 +11,6 @@ namespace ProgrammingChallenges.Csharp.Console.Challenges.HackerRank;
 [SuppressMessage("Maintainability", "IDE0057", Justification = "Keep challenge code as is even if not used")]
 internal static class OldChallengesToMigrate
 {
-    public static int birthdayCakeCandles(List<int> candles)
-    {
-        candles.Sort();
-        int tallest = candles[^1];
-        int count = 0;
-        for (int i = candles.Count - 1; i >= 0; i--)
-        {
-            if (candles[i] != tallest)
-            {
-                break;
-            }
-
-            count++;
-        }
-        return count;
-    }
-
     public static string timeConversion(string s)
     {
         return DateTime.Parse(s).ToString("HH:mm:ss");

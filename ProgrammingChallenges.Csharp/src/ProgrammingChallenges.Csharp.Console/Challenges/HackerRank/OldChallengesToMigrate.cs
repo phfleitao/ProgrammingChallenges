@@ -12,30 +12,6 @@ namespace ProgrammingChallenges.Csharp.Console.Challenges.HackerRank;
 [SuppressMessage("Maintainability", "IDE0057", Justification = "Keep challenge code as is even if not used")]
 internal static class OldChallengesToMigrate
 {
-    public static int diagonalDifference(List<List<int>> arr)
-    {
-        int somaDiagonalPrincipal = 0;
-        int somaDiagonalSecundaria = 0;
-
-        for (int linha = 0; linha < arr.Count; linha++)
-        {
-            for (int coluna = 0; coluna < arr.Count; coluna++)
-            {
-                if (linha == coluna)
-                {
-                    somaDiagonalPrincipal += arr[linha][coluna];
-                }
-
-                if (linha + coluna == arr.Count - 1)
-                {
-                    somaDiagonalSecundaria += arr[linha][coluna];
-                }
-            }
-        }
-
-        return Math.Abs(somaDiagonalPrincipal - somaDiagonalSecundaria);
-    }
-
     public static void plusMinus(int[] arr)
     {
         int countPlus = 0; int countMinus = 0; int countZero = 0;

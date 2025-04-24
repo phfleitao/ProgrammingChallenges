@@ -285,6 +285,9 @@ dotnet_diagnostic.CA2327.severity = none
 
 # Visual Studio.Analyzers
 
+# Suggest (or enforce) removal of unused using directives
+dotnet_diagnostic.IDE0005.severity = suggestion
+
 # IDE0046: Convert to conditional expression
 dotnet_diagnostic.IDE0046.severity = none
 dotnet_diagnostic.IDE0022.severity = none

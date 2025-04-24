@@ -26,6 +26,9 @@ internal static class HackerRankChallenges
     public static (string Identification, string Description) CountingValleys
         => ($"{Identification}.CountingValleys", "Counting Valleys");
 
+    public static (string Identification, string Description) DiagonalDifference
+        => ($"{Identification}.DiagonalDifference", "Diagonal Difference");
+
     public static (string Identification, string Description) EletronicShop
         => ($"{Identification}.EletronicShop", "Eletronic Shop");
 

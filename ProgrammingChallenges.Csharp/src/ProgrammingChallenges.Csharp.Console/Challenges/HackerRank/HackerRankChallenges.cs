@@ -35,6 +35,9 @@ internal static class HackerRankChallenges
     public static (string Identification, string Description) EletronicShop
         => ($"{Identification}.EletronicShop", "Eletronic Shop");
 
+    public static (string Identification, string Description) GradingStudents
+    => ($"{Identification}.GradingStudents", "Grading Students");
+
     public static (string Identification, string Description) MiniMaxSum
         => ($"{Identification}.MiniMaxSum", "Mini-Max Sum");
     

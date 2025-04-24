@@ -11,6 +11,84 @@ namespace ProgrammingChallenges.Csharp.Console.Challenges.HackerRank;
 [SuppressMessage("Maintainability", "IDE0057", Justification = "Keep challenge code as is even if not used")]
 internal static class OldChallengesToMigrate
 {
+    public static void countApplesAndOranges(int s, int t, int a, int b, int[] apples, int[] oranges)
+    {
+        var applesInProperty = apples.Count(d => a + d >= s && a + d <= t);
+        var orangesInProperty = oranges.Count(d => b + d >= s && b + d <= t);
+
+        System.Console.WriteLine(applesInProperty);
+        System.Console.WriteLine(orangesInProperty);
+    }
+
+    public static string kangaroo(int x1, int v1, int x2, int v2)
+    {
+        if (x2 > x1 && v2 >= v1)
+        {
+            return "NO";
+        }
+
+        if (x1 > x2 && v1 >= v2)
+        {
+            return "NO";
+        }
+
+        var p = (x2 - x1) / (v1 - v2);
+
+        if (x1 + (v1 * p) == x2 + (v2 * p))
+        {
+            return "YES";
+        }
+        else
+        {
+            return "NO";
+        }
+    }
+
+    public static int migratoryBirds(List<int> arr)
+    {
+        var frequency = new int[5] { 0, 0, 0, 0, 0 };
+        var GreaterFrequency = 0;
+
+        for (int i = 0; i < arr.Count; i++)
+        {
+            frequency[arr[i] - 1]++;
+            if (frequency[arr[i] - 1] > GreaterFrequency)
+            {
+                GreaterFrequency = frequency[arr[i] - 1];
+            }
+        }
+        for (int i = 0; i < frequency.Length; i++)
+        {
+            if (frequency[i] == GreaterFrequency)
+            {
+                return i + 1;
+            }
+        }
+        return 0;
+    }
+
+    public static int divisibleSumPairs(int n, int k, int[] ar)
+    {
+        var counter = 0;
+        for (int i = 0; i < ar.Length-1; i++)
+        {
+            for (int j = i+1; j < ar.Length; j++)
+            {
+                if ((ar[i] + ar[j]) % k == 0)
+                {
+                    counter++;
+                }
+            }                
+        }
+
+        return counter;
+    }
+
+    public static string angryProfessor(int k, int[] a)
+    {
+        return a.Count(t => t <= 0) >= k ? "NO" : "YES";
+    }
+
     //Falha no submit para numeros muito altos ... é preciso otimizar
     public static int OnesAndTwos(int a, int b)
     {
@@ -120,97 +198,4 @@ internal static class OldChallengesToMigrate
         return expressoes.Values.Distinct().Count();
     }
 
-    public static List<int> gradingStudents(List<int> grades)
-    {
-        for (int i = 0; i < grades.Count; i++)
-        {
-            var nextMultipleOf5 = grades[i] + (5 - (grades[i] % 5));
-
-            //rules
-            if (grades[i] >= 38 && nextMultipleOf5 - grades[i] < 3)
-            {
-                grades[i] = nextMultipleOf5;
-            }
-        }
-
-        return grades;
-    }
-
-    public static void countApplesAndOranges(int s, int t, int a, int b, int[] apples, int[] oranges)
-    {
-        var applesInProperty = apples.Count(d => a + d >= s && a + d <= t);
-        var orangesInProperty = oranges.Count(d => b + d >= s && b + d <= t);
-
-        System.Console.WriteLine(applesInProperty);
-        System.Console.WriteLine(orangesInProperty);
-    }
-
-    public static string kangaroo(int x1, int v1, int x2, int v2)
-    {
-        if (x2 > x1 && v2 >= v1)
-        {
-            return "NO";
-        }
-
-        if (x1 > x2 && v1 >= v2)
-        {
-            return "NO";
-        }
-
-        var p = (x2 - x1) / (v1 - v2);
-
-        if (x1 + (v1 * p) == x2 + (v2 * p))
-        {
-            return "YES";
-        }
-        else
-        {
-            return "NO";
-        }
-    }
-
-    public static int migratoryBirds(List<int> arr)
-    {
-        var frequency = new int[5] { 0, 0, 0, 0, 0 };
-        var GreaterFrequency = 0;
-
-        for (int i = 0; i < arr.Count; i++)
-        {
-            frequency[arr[i] - 1]++;
-            if (frequency[arr[i] - 1] > GreaterFrequency)
-            {
-                GreaterFrequency = frequency[arr[i] - 1];
-            }
-        }
-        for (int i = 0; i < frequency.Length; i++)
-        {
-            if (frequency[i] == GreaterFrequency)
-            {
-                return i + 1;
-            }
-        }
-        return 0;
-    }
-
-    public static int divisibleSumPairs(int n, int k, int[] ar)
-    {
-        var counter = 0;
-        for (int i = 0; i < ar.Length-1; i++)
-        {
-            for (int j = i+1; j < ar.Length; j++)
-            {
-                if ((ar[i] + ar[j]) % k == 0)
-                {
-                    counter++;
-                }
-            }                
-        }
-
-        return counter;
-    }
-
-    public static string angryProfessor(int k, int[] a)
-    {
-        return a.Count(t => t <= 0) >= k ? "NO" : "YES";
-    }
 }

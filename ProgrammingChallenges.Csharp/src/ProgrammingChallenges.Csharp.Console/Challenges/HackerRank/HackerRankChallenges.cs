@@ -8,6 +8,9 @@ internal static class HackerRankChallenges
     => ($"{Identification}.Template", "Template");
 
 
+    public static (string Identification, string Description) AppleAndOrange
+    => ($"{Identification}.AppleAndOrange", "Apple and Orange");
+
     public static (string Identification, string Description) AVeryBigSum
         => ($"{Identification}.AVeryBigSum", "A Very Big Sum");
 

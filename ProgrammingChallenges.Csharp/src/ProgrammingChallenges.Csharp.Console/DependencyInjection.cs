@@ -12,6 +12,7 @@ internal static class ConsoleDependencyInjection
         services.AddTransient<IChallengeIO, ConsoleChallengeIO>();
 
         // HackerRank Challenges
+        services.AddTransient<AppleAndOrangeChallenge>();
         services.AddTransient<AVeryBigSumChallenge>();
         services.AddTransient<BetweenTwoSetsChallenge>();
         services.AddTransient<BillDivisionChallenge>();

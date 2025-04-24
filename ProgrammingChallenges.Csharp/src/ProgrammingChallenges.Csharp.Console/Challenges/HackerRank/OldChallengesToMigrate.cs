@@ -11,15 +11,6 @@ namespace ProgrammingChallenges.Csharp.Console.Challenges.HackerRank;
 [SuppressMessage("Maintainability", "IDE0057", Justification = "Keep challenge code as is even if not used")]
 internal static class OldChallengesToMigrate
 {
-    public static void countApplesAndOranges(int s, int t, int a, int b, int[] apples, int[] oranges)
-    {
-        var applesInProperty = apples.Count(d => a + d >= s && a + d <= t);
-        var orangesInProperty = oranges.Count(d => b + d >= s && b + d <= t);
-
-        System.Console.WriteLine(applesInProperty);
-        System.Console.WriteLine(orangesInProperty);
-    }
-
     public static string kangaroo(int x1, int v1, int x2, int v2)
     {
         if (x2 > x1 && v2 >= v1)
